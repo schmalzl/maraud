@@ -1,0 +1,39 @@
+USAGE
+
+maraud <ARGUMENT> | <INPUT> <MODE> <OPTIONS> <EXTRA_OPTIONS>
+
+ARGUMENTS
+-i              specify input file/url --> download process
+-v, --version   show version
+-h, --help      help page
+
+MODES:
+-S          Single Weblink
+-L          List
+
+OPTIONS:
+---------------------------------------------------------------
+-o          custom output directory         directory
+-f          format                          c_wav, c_mp3, c_flac, c_aac, c_ogg, std
+-b          backup                          directory
+-a          auto sort mode (text file)
+-bf         backup format                   c_wav, c_mp3, c_flac, c_aac, c_ogg, std
+-x          create missing directories
+
+EXTRA OPTIONS
+--ignore-errors                             Ignore all errors created
+--ignore-warnings                           Ignore all warnings
+--abort-on-error                            Terminate process if an error occurs
+--dump-log                                  Create a report log in the output folder
+--verbose-warnings                          Print warning that would be supressed by default
+--quiet                                     Print no text
+--no-progress                               Print no progress bar
+--progress                                  Print progress bar even when used in quiet mode 
+--dump-traffic                              Print sent and recieved HTTP traffic to file in output folder
+--print-traffic                             Print HTTP traffic to console
+--verbose                                   Enable verbose mode
+--loud-verbose                              Print every action to console
+--no-report                                 Do not print total time- and file report
+--one-log                                   If selected, print logs, http traffic and report into a single file
+--confirm-download                          Adds a confirm window before the download start
+--proc-timeout                              Small delay between each process for log reading in realtime
