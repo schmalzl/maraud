@@ -1,0 +1,25 @@
+maraud
+Issues & TODO LIST
+
+Issue numbers (#) refer to GitHub's Issue Tracker items listed at https://github.com/schamlzl/maraud/issues/XXXX
+The list below consist mostly of ideas and missing parts of the program i've noted down or GitHub Issues by the
+community. It's mostly a bunch of personal notes, probably incomplete.
+
+- backends: check if ffmpeg is necessary
+- backends: if ffmpeg is necessary, install it.
+- backends: check if sound quality can be limited by the user somehow.
+- argv: build analyser for program arguments
+- log: build a unified stdout and stderr system
+- log: build progress bar with carriage return
+
+- publish: try building to release and include all libraries and external files and backends to a self-contained app
+- publish: write a publish automation script for bulk testing
+
+- restructure: rewrite codebase for easier readability
+- restructure: abandon usage.txt and add content to docs.md
+- changelog: start writing changelog for current version with already implemented features
+- docs: Add basic docs layout and some starter information
+- readme: update to current program
+- readme: rework readme, fix typos, small adjustments
+- readme: take development pictures for gallery
+- github page: update issue page for easier use
