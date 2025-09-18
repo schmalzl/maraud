@@ -46,7 +46,7 @@ def version():
     print("")
 
 def help():
-    pass
+    print("USAGE...")
 
 def excp_invalidUsage():
     print("maraud: " + Fore.LIGHTRED_EX + "fatal error: " + Fore.RESET + "invalid input")
@@ -58,7 +58,15 @@ def run():
 
     if len(sys.argv) > 1:
         # sys.argv[array]
-        pass
+        # check first argv
+        if(sys.argv[1] == "--version" or sys.argv[1] == "-v"):
+            version()
+        elif(sys.argv[1] == "--help" or sys.argv[1] == "-h"):
+            help()
+        elif(sys.argv[1] == "-i"):
+            print("starting...")
+        else:
+            excp_invalidUsage()
     else:
         # throw exception
         excp_invalidUsage()
